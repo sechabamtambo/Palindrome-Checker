@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.js-input {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    transition: border-color 1s ease-in-out;
+}
+
+.js-input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.checkButton {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 1s ease-in-out;
+}
+
+.checkButton:hover {
+    background-color: blue;
+}
+
+
+.display {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .js-input {
+        width: 80%;
+    }
+
+    .checkButton {
+        width: 80%;
+    }
+}
